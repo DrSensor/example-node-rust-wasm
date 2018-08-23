@@ -1,8 +1,8 @@
+import instantiateWasm from './lib.rs';
+
 async function calculator() {
-  return {
-    add: (a, b) => a + b,
-    div: (a, b) => a / b
-  };
+  const { instance } = await instantiateWasm;
+  return instance.exports;
 }
 
 calculator().then(({ add, div }) => {

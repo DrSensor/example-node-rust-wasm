@@ -1,7 +1,9 @@
-#[cfg(test)]
-mod tests {
-    #[test]
-    fn it_works() {
-        assert_eq!(2 + 2, 4);
-    }
+#[no_mangle]
+pub fn add(a: u8, b: u8) -> u8 {
+    a + b
+}
+
+#[no_mangle]
+pub fn div(a: u8, b: u8) -> u8 {
+    a / b
 }

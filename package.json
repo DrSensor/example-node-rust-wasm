@@ -24,6 +24,10 @@
   },
   "homepage": "https://github.com/DrSensor/example-node-rust-wasm#readme",
   "devDependencies": {
-    "rollup": "^0.64.1"
+    "rollup": "^0.64.1",
+    "rollup-plugin-rust": "file:../.."
+  },
+  "dependencies": {
+    "buffer-es6": "^4.9.3"
   }
 }
