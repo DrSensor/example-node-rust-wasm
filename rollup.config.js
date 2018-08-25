@@ -6,6 +6,5 @@ export default {
 		file: "dist/index.js",
 		format: "cjs"
 	},
-	plugins: [rust()],
-	external: ["buffer"]
+	plugins: [rust()]
 }
